@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>810</width>
+    <height>261</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>810</width>
+    <height>261</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>810</width>
+    <height>261</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Simple Audio Visualizer</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QSlider" name="verticalSlider">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>80</y>
+     <width>22</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>811</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="backgroundBrush">
+    <brush brushstyle="SolidPattern">
+     <color alpha="255">
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </brush>
+   </property>
+   <property name="foregroundBrush">
+    <brush brushstyle="NoBrush">
+     <color alpha="255">
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </brush>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>verticalSlider</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
